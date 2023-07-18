@@ -528,3 +528,363 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Cache.v
 // TclEventType: FILE_SET_CHANGE
 // Elapsed Time for: 'L.f': 53m:44s
 // Elapsed Time for: 'L.f': 53m:47s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (Cache.v) elapsed time: 0.2s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:22s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:25s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:28s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:31s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:34s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:37s
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:40s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:43s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 57m:46s
+// Elapsed Time for: 'L.f': 57m:49s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:19s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:22s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 58m:25s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:28s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:31s
+// Elapsed Time for: 'L.f': 58m:34s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:37s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:40s
+// Elapsed Time for: 'L.f': 58m:43s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 58m:49s
+// Elapsed Time for: 'L.f': 58m:52s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 59m:01s
+// Elapsed Time for: 'L.f': 59m:04s
+// HMemoryUtils.trashcanNow. Engine heap size: 854 MB. GUI used memory: 112 MB. Current time: 7/18/23, 10:34:23 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:01m:20s
+// Elapsed Time for: 'L.f': 01h:01m:23s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:01m:38s
+// Elapsed Time for: 'L.f': 01h:01m:41s
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1429 ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:02m:59s
+// Elapsed Time for: 'L.f': 01h:03m:03s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:03m:36s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:03m:39s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:03m:42s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:03m:45s
+// Elapsed Time for: 'L.f': 01h:03m:48s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:03m:51s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:03m:54s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:03m:57s
+// Elapsed Time for: 'L.f': 01h:04m:00s
+// Elapsed Time for: 'L.f': 01h:04m:03s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:04m:57s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:05m:01s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:05m:03s
+// Elapsed Time for: 'L.f': 01h:05m:06s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:05m:15s
+// Elapsed Time for: 'L.f': 01h:05m:18s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:05m:58s
+// Elapsed Time for: 'L.f': 01h:06m:01s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:10s
+// Elapsed Time for: 'L.f': 01h:06m:13s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:22s
+// Elapsed Time for: 'L.f': 01h:06m:25s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:34s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:37s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:40s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:43s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:46s
+// Elapsed Time for: 'L.f': 01h:06m:49s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:58s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:07m:01s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:07m:04s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:07m:08s
+// Elapsed Time for: 'L.f': 01h:07m:11s
+// Elapsed Time for: 'L.f': 01h:07m:14s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:07m:23s
+// PAPropertyPanels.initPanels (Cache.v) elapsed time: 0.2s
+// Elapsed Time for: 'L.f': 01h:07m:26s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:07m:41s
+// Elapsed Time for: 'L.f': 01h:07m:44s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:07m:53s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:07m:56s
+// Elapsed Time for: 'L.f': 01h:07m:59s
+// Elapsed Time for: 'L.f': 01h:08m:02s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:05s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:08s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:11s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:14s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:17s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:20s
+// Elapsed Time for: 'L.f': 01h:08m:23s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:38s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:41s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:44s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:47s
+// PAPropertyPanels.initPanels (Cache.v) elapsed time: 0.2s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 01h:08m:50s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:53s
+// Elapsed Time for: 'L.f': 01h:08m:56s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:08m:59s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:02s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:05s
+// Elapsed Time for: 'L.f': 01h:09m:08s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:15s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:18s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:21s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:24s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:27s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:30s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:33s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:36s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:39s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:09m:42s
+// Elapsed Time for: 'L.f': 01h:09m:45s
+// Elapsed Time for: 'L.f': 01h:09m:48s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:10m:27s
+// Elapsed Time for: 'L.f': 01h:10m:30s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:10m:39s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:10m:43s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:10m:45s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:10m:48s
+// Elapsed Time for: 'L.f': 01h:10m:51s
+// Elapsed Time for: 'L.f': 01h:10m:55s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:10m:57s
+// Elapsed Time for: 'L.f': 01h:11m:01s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:11m:10s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:11m:13s
+// Elapsed Time for: 'L.f': 01h:11m:16s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:11m:55s
+// Elapsed Time for: 'L.f': 01h:11m:58s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:12m:43s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:12m:46s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:12m:49s
+// Elapsed Time for: 'L.f': 01h:12m:53s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:12m:56s
+// Elapsed Time for: 'L.f': 01h:12m:59s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:13m:44s
+// Elapsed Time for: 'L.f': 01h:13m:47s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:14m:33s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:14m:36s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:14m:39s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:14m:42s
+// Elapsed Time for: 'L.f': 01h:14m:45s
+// Elapsed Time for: 'L.f': 01h:14m:48s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:15m:21s
+// Elapsed Time for: 'L.f': 01h:15m:24s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:15m:33s
+// Elapsed Time for: 'L.f': 01h:15m:36s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:16m:15s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:16m:18s
+// Elapsed Time for: 'L.f': 01h:16m:21s
+// Elapsed Time for: 'L.f': 01h:16m:24s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:16m:55s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:16m:58s
+// PAPropertyPanels.initPanels (Cache.v) elapsed time: 0.2s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:17m:01s
+// Elapsed Time for: 'L.f': 01h:17m:04s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:17m:13s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:17m:16s
+// Elapsed Time for: 'L.f': 01h:17m:19s
+// Elapsed Time for: 'L.f': 01h:17m:22s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:17m:37s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:17m:40s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:17m:43s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:17m:46s
+// Elapsed Time for: 'L.f': 01h:17m:49s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:17m:52s
+// Elapsed Time for: 'L.f': 01h:17m:55s
+// Elapsed Time for: 'L.f': 01h:17m:58s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:18m:07s
+// Elapsed Time for: 'L.f': 01h:18m:10s
+// Elapsed time: 4442 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F

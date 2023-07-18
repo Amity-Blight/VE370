@@ -169,3 +169,5 @@ ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct 
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

@@ -39,7 +39,7 @@ module Main_Memory(
 
     always @(*) begin
         Done = 0;
-        if (read_write_mem == 0) begin // Read operation
+        if (read_write_mem == 0) begin // Reading operation
             for (i = 0; i < 16; i = i+1) begin
                 for (j = 0; j < 4; ) begin
                     
@@ -50,9 +50,9 @@ module Main_Memory(
                             main_mem[Index][7], main_mem[Index][6], main_mem[Index][5], main_mem[Index][4],
                             main_mem[Index][3], main_mem[Index][2], main_mem[Index][1], main_mem[Index][0]};
         end
-        else begin // Write operation
+        else begin // Writing operation
             for (i = 16; i > 0; i = i-1) begin
-                main_mem[Index][i-1] = write_data_mem[i*8 - 1:i*8 - 8];
+                main_mem[Index][i-1] = write_data_mem[i*8 - 1: i*8 - 8];
             end
         end
         Done = 1;
