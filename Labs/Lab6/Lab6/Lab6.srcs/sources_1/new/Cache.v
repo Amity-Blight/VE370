@@ -193,7 +193,7 @@ module Cache(
             if (read_write_cache == 0) begin // Reading operation
                 if (Done) begin // Main mem operation completed
                     /* Write from main mem to cache */
-                    cache_mem[Index]    =   {read_data_mem[0], read_data_mem[1], read_data_mem[2], read_data_mem[3]};
+                    cache_mem[Index]    =   {read_data_mem[3], read_data_mem[2], read_data_mem[1], read_data_mem[0]};
                     /* Read from cache */
                     if (byte_offset == 2'b0) begin // Word operation
                         read_data_cache = read_data_mem[word_offset];
