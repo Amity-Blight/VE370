@@ -21,22 +21,22 @@
 
 
 module Cache(
-    input           read_write_cache,
-    input   [9:0]   address_cache,
+    input               read_write_cache,
+    input       [9:0]   address_cache,
     /*
     Tag         = address_cache[9:6]
     Index       = address_cache[5:4]
     Word Offset = address_cache[3:2]
     Byte Offset = address_cache[1:0]
     */
-    input   [31:0]  write_data_cache,
-    input           Done,
-    input   [31:0]  read_data_mem[3:0],
-    output  [31:0]  read_data_cache,
-    output          hit_miss,
-    output          read_write_mem,
-    output  [9:0]   address_mem,
-    output  [31:0]  write_data_mem[3:0]
+    input       [31:0]  write_data_cache,
+    input               Done,
+    input       [127:0]  read_data_mem,
+    output reg  [31:0]  read_data_cache,
+    output reg          hit_miss,
+    output reg          read_write_mem,
+    output reg  [9:0]   address_mem,
+    output reg  [127:0]  write_data_mem
 );
 
     reg [7:0] cache_mem[3:0][15:0]; // 4 blocks in total; 4 words in a block, namely 16 bytes in a block;
