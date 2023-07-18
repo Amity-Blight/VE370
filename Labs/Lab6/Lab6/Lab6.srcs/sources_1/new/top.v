@@ -30,8 +30,8 @@ module top( input clk);
     wire [9:0]   address_mem;
     wire read_write_mem, Done;
     // You may add the signal you need. However, you cannot change the signals above.
-    wire [31:0] read_mem[3:0];
-    wire [31:0] write_mem[3:0];
+    wire [127:0] read_mem;
+    wire [127:0] write_mem;
 
     Cache           Cache(read_write_cache, address_cache, write_data_cache, Done, read_mem, read_data_cache, hit_miss, read_write_mem, address_mem, write_mem);
     Main_Memory     mem_db(read_write_mem, address_mem, write_mem, read_mem, Done);
