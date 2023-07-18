@@ -31,15 +31,15 @@ module Cache(
     */
     input   [31:0]  write_data_cache,
     input           Done,
-    input   [31:0]  read_data_mem,
+    input   [31:0]  read_data_mem[3:0],
     output  [31:0]  read_data_cache,
     output          hit_miss,
     output          read_write_mem,
     output  [9:0]   address_mem,
-    output  [31:0]  write_data_mem
+    output  [31:0]  write_data_mem[3:0]
 );
 
-    reg [7:0] cache_mem[3:0][15:0];
+    reg [7:0] cache_mem[3:0][15:0]; // 4 blocks in total; 4 words in a block, namely 16 bytes in a block;
     reg [3:0] Tag;
     reg [1:0] Index, word_offset, byte_offset;
     reg valid_bits[3:0];
@@ -80,6 +80,7 @@ module Cache(
                         cache_mem[Index][word_offset * 4 + 2] = write_data_cache[23:16];
                         cache_mem[Index][word_offset * 4 + 3] = write_data_cache[31:24];
                     end
+                    dirty_bits[Index] = 1;
                 end
                 hit_miss = 1;
             end

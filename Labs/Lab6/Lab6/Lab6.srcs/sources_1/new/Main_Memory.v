@@ -23,9 +23,9 @@
 module Main_Memory(
     input           read_write_mem,
     input   [9:0]   address_mem,
-    input   [31:0]  write_data_mem,
-    output  [31:0]  read_data_mem,
-    output          Done
+    input   [31:0]  write_data_mem[3:0],
+    output  [31:0]  read_data_mem[3:0],
+    output  reg     Done
 );
 
     reg [7:0] main_mem[1023:0];
