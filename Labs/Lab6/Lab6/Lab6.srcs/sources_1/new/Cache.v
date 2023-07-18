@@ -61,7 +61,7 @@ module Cache(
 
     always @(*) begin
         if (valid_bits[Index] == 1) begin    // Block valid
-            if (tags[Index] == Tag) begin   // Tag matches - hit
+            if (tags[Index] == Tag) begin   // Tag matches - HIT
                 if (read_write_cache == 0) begin    // Reading operation
                     if (byte_offset == 2'b0) begin // Word operation
                         read_data_cache = {cache_mem[Index][word_offset * 4 + 3],
@@ -80,49 +80,158 @@ module Cache(
                         cache_mem[Index][word_offset * 4 + 2] = write_data_cache[23:16];
                         cache_mem[Index][word_offset * 4 + 3] = write_data_cache[31:24];
                     end
+<<<<<<< HEAD
+=======
+                    else begin // Byte operation
+                        cache_mem[Index][word_offset * 4 + 1] = 8'b0;
+                        cache_mem[Index][word_offset * 4 + 2] = 8'b0;
+                        cache_mem[Index][word_offset * 4 + 3] = 8'b0;
+                    end
+>>>>>>> 4e5347a7c3866a7d40ad946283abc52f84ebe5d7
                     dirty_bits[Index] = 1;
                 end
                 hit_miss = 1;
             end
-            else begin // Tag doesn't match - miss
+            else begin // Tag doesn't match - MISS
                 hit_miss = 0;
                 if (dirty_bits[Index] == 0) begin // Block not dirty
                     read_write_mem = read_write_cache;
-                    address_mem = address_cache;
+                    address_mem = {Tag, Index, 4'b0};
                     if (read_write_cache == 0) begin // Reading operation
-                        if (d) begin // Main mem operation completed
+                        if (Done) begin // Main mem operation completed
                             /* Write from main mem to cache */
-                            cache_mem[Index][word_offset * 4]       =   read_data_mem[7:0];
-                            cache_mem[Index][word_offset * 4 + 1]   =   read_data_mem[15:8];
-                            cache_mem[Index][word_offset * 4 + 2]   =   read_data_mem[23:16];
-                            cache_mem[Index][word_offset * 4 + 3]   =   read_data_mem[31:24];
-                            read_data_cache = read_data_mem; // Read from main mem
+                            cache_mem[Index]    =   {read_data_mem[0], read_data_mem[1], read_data_mem[2], read_data_mem[3]};
+                            /* Read from cache */
+                            if (byte_offset == 2'b0) begin // Word operation
+                                read_data_cache = read_data_mem[word_offset];
+                            end
+                            else begin // Byte operation
+                                read_data_cache = {24'b0, cache_mem[Index][word_offset * 4 + byte_offset]};
+                            end
+                            tags[Index] = Tag;
                             hit_miss = 1;
-                            d = 0;
                         end
                     end
                     else begin // Writing operation
+                        /* Write from CPU to cache */
                         cache_mem[Index][word_offset * 4 + byte_offset] = write_data_cache[7:0];
-                        write_data_mem = {24'b0, write_data_cache[7:0]};
                         if (byte_offset == 2'b0) begin // Word operation
                             cache_mem[Index][word_offset * 4 + 1] = write_data_cache[15:8];
                             cache_mem[Index][word_offset * 4 + 2] = write_data_cache[23:16];
                             cache_mem[Index][word_offset * 4 + 3] = write_data_cache[31:24];
-                            write_data_mem = write_data_cache;
                         end
-                        if (d) begin // Main mem operation completed
+                        else begin // Byte operation
+                            cache_mem[Index][word_offset * 4 + 1] = 8'b0;
+                            cache_mem[Index][word_offset * 4 + 2] = 8'b0;
+                            cache_mem[Index][word_offset * 4 + 3] = 8'b0;
+                        end
+                        /* Write from cache to main mem */
+                        write_data_mem[0] = cache_mem[Index][3:0];
+                        write_data_mem[1] = cache_mem[Index][7:4];
+                        write_data_mem[2] = cache_mem[Index][11:8];
+                        write_data_mem[3] = cache_mem[Index][15:12];
+                        if (Done) begin // Main mem operation completed
+                            tags[Index] = Tag;
                             hit_miss = 1;
+                        end
+                    end
+                end
+                else begin // Block dirty
+                    /* Write back */
+                    read_write_mem = 1;
+                    address_mem = {tags[Index], Index, 4'b0};
+                    write_data_mem[0] = cache_mem[Index][3:0];
+                    write_data_mem[1] = cache_mem[Index][7:4];
+                    write_data_mem[2] = cache_mem[Index][11:8];
+                    write_data_mem[3] = cache_mem[Index][15:12];
+                    if (Done) begin // Write back completed
+                        dirty_bits[Index] = 0;
+                        read_write_mem = read_write_cache;
+                        address_mem = {Tag, Index, 4'b0};
+                        if (read_write_cache == 0) begin // Reading operation
+                            if (Done) begin // Main mem operation completed
+                                /* Write from main mem to cache */
+                                cache_mem[Index]    =   {read_data_mem[0], read_data_mem[1], read_data_mem[2], read_data_mem[3]};
+                                /* Read from cache */
+                                if (byte_offset == 2'b0) begin // Word operation
+                                    read_data_cache = read_data_mem[word_offset];
+                                end
+                                else begin // Byte operation
+                                    read_data_cache = {24'b0, cache_mem[Index][word_offset * 4 + byte_offset]};
+                                end
+                                tags[Index] = Tag;
+                                hit_miss = 1;
+                            end
+                        end
+                        else begin // Writing operation
+                            /* Write from CPU to cache */
+                            cache_mem[Index][word_offset * 4 + byte_offset] = write_data_cache[7:0];
+                            if (byte_offset == 2'b0) begin // Word operation
+                                cache_mem[Index][word_offset * 4 + 1] = write_data_cache[15:8];
+                                cache_mem[Index][word_offset * 4 + 2] = write_data_cache[23:16];
+                                cache_mem[Index][word_offset * 4 + 3] = write_data_cache[31:24];
+                            end
+                            else begin // Byte operation
+                                cache_mem[Index][word_offset * 4 + 1] = 8'b0;
+                                cache_mem[Index][word_offset * 4 + 2] = 8'b0;
+                                cache_mem[Index][word_offset * 4 + 3] = 8'b0;
+                            end
+                            /* Write from cache to main mem */
+                            write_data_mem[0] = cache_mem[Index][3:0];
+                            write_data_mem[1] = cache_mem[Index][7:4];
+                            write_data_mem[2] = cache_mem[Index][11:8];
+                            write_data_mem[3] = cache_mem[Index][15:12];
+                            if (Done) begin // Main mem operation completed
+                                tags[Index] = Tag;
+                                hit_miss = 1;
+                            end
                         end
                     end
                 end
             end
         end
-        else begin
+        else begin // Block invalid
+            read_write_mem = read_write_cache;
+            address_mem = {Tag, Index, 4'b0};
+            if (read_write_cache == 0) begin // Reading operation
+                if (Done) begin // Main mem operation completed
+                    /* Write from main mem to cache */
+                    cache_mem[Index]    =   {read_data_mem[0], read_data_mem[1], read_data_mem[2], read_data_mem[3]};
+                    /* Read from cache */
+                    if (byte_offset == 2'b0) begin // Word operation
+                        read_data_cache = read_data_mem[word_offset];
+                    end
+                    else begin // Byte operation
+                        read_data_cache = {24'b0, cache_mem[Index][word_offset * 4 + byte_offset]};
+                    end
+                    tags[Index] = Tag;
+                    hit_miss = 1;
+                end
+            end
+            else begin // Writing operation
+                /* Write from CPU to cache */
+                cache_mem[Index][word_offset * 4 + byte_offset] = write_data_cache[7:0];
+                if (byte_offset == 2'b0) begin // Word operation
+                    cache_mem[Index][word_offset * 4 + 1] = write_data_cache[15:8];
+                    cache_mem[Index][word_offset * 4 + 2] = write_data_cache[23:16];
+                    cache_mem[Index][word_offset * 4 + 3] = write_data_cache[31:24];
+                end
+                else begin // Byte operation
+                    cache_mem[Index][word_offset * 4 + 1] = 8'b0;
+                    cache_mem[Index][word_offset * 4 + 2] = 8'b0;
+                    cache_mem[Index][word_offset * 4 + 3] = 8'b0;
+                end
+                /* Write from cache to main mem */
+                write_data_mem[0] = cache_mem[Index][3:0];
+                write_data_mem[1] = cache_mem[Index][7:4];
+                write_data_mem[2] = cache_mem[Index][11:8];
+                write_data_mem[3] = cache_mem[Index][15:12];
+                if (Done) begin // Main mem operation completed
+                    tags[Index] = Tag;
+                    hit_miss = 1;
+                end
+            end
         end
-    end
-
-    always @(posedge Done) begin
-        d <= 1;
     end
 
     assign Tag         = address_cache[9:6];

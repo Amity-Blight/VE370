@@ -28,7 +28,7 @@ module Main_Memory(
     output  reg     Done
 );
 
-    reg [7:0] main_mem[1023:0];
+    reg [7:0] main_mem[63:0][15:0]; // 64 blocks in total; 16 bytes in a block
 
     initial begin
         read_data_mem = 32'b0;
