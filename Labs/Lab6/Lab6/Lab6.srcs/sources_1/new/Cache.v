@@ -80,14 +80,11 @@ module Cache(
                         cache_mem[Index][word_offset * 4 + 2] = write_data_cache[23:16];
                         cache_mem[Index][word_offset * 4 + 3] = write_data_cache[31:24];
                     end
-<<<<<<< HEAD
-=======
                     else begin // Byte operation
                         cache_mem[Index][word_offset * 4 + 1] = 8'b0;
                         cache_mem[Index][word_offset * 4 + 2] = 8'b0;
                         cache_mem[Index][word_offset * 4 + 3] = 8'b0;
                     end
->>>>>>> 4e5347a7c3866a7d40ad946283abc52f84ebe5d7
                     dirty_bits[Index] = 1;
                 end
                 hit_miss = 1;
@@ -196,7 +193,7 @@ module Cache(
             if (read_write_cache == 0) begin // Reading operation
                 if (Done) begin // Main mem operation completed
                     /* Write from main mem to cache */
-                    cache_mem[Index]    =   {read_data_mem[0], read_data_mem[1], read_data_mem[2], read_data_mem[3]};
+                    cache_mem[Index]    =   {read_data_mem[3], read_data_mem[2], read_data_mem[1], read_data_mem[0]};
                     /* Read from cache */
                     if (byte_offset == 2'b0) begin // Word operation
                         read_data_cache = read_data_mem[word_offset];
