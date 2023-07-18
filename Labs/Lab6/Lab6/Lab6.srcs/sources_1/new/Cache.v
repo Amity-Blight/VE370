@@ -40,8 +40,8 @@ module Cache(
 );
 
     reg [7:0] cache_mem[3:0][15:0]; // 4 blocks in total; 4 words in a block, namely 16 bytes in a block;
-    reg [3:0] Tag;
-    reg [1:0] Index, word_offset, byte_offset;
+    wire [3:0] Tag;
+    wire [1:0] Index, word_offset, byte_offset;
     reg valid_bits[3:0];
     reg dirty_bits[3:0];
     reg [3:0] tags[3:0];
@@ -97,9 +97,22 @@ module Cache(
                     if (read_write_cache == 0) begin // Reading operation
                         if (Done) begin // Main mem operation completed
                             /* Write from main mem to cache */
-                            for (i = 16; i > 0; i = i-1) begin
-                                cache_mem[Index][i-1] = read_data_mem[i*8 - 1: i*8 - 8];
-                            end
+                            cache_mem[Index][15] = read_data_mem[127:120];
+                            cache_mem[Index][14] = read_data_mem[119:112];
+                            cache_mem[Index][13] = read_data_mem[111:104];
+                            cache_mem[Index][12] = read_data_mem[103:96];
+                            cache_mem[Index][11] = read_data_mem[95:88];
+                            cache_mem[Index][10] = read_data_mem[87:80];
+                            cache_mem[Index][9] = read_data_mem[79:72];
+                            cache_mem[Index][8] = read_data_mem[71:64];
+                            cache_mem[Index][7] = read_data_mem[63:56];
+                            cache_mem[Index][6] = read_data_mem[55:48];
+                            cache_mem[Index][5] = read_data_mem[47:40];
+                            cache_mem[Index][4] = read_data_mem[39:32];
+                            cache_mem[Index][3] = read_data_mem[31:24];
+                            cache_mem[Index][2] = read_data_mem[23:16];
+                            cache_mem[Index][1] = read_data_mem[15:8];
+                            cache_mem[Index][0] = read_data_mem[7:0];
                             /* Read from cache */
                             if (byte_offset == 2'b0) begin // Word operation
                                 read_data_cache = {cache_mem[Index][word_offset * 4 + 3],
@@ -153,9 +166,22 @@ module Cache(
                         if (read_write_cache == 0) begin // Reading operation
                             if (Done) begin // Main mem operation completed
                                 /* Write from main mem to cache */
-                                for (i = 16; i > 0; i = i-1) begin
-                                    cache_mem[Index][i-1] = read_data_mem[i*8 - 1: i*8 - 8];
-                                end
+                                cache_mem[Index][15] = read_data_mem[127:120];
+                                cache_mem[Index][14] = read_data_mem[119:112];
+                                cache_mem[Index][13] = read_data_mem[111:104];
+                                cache_mem[Index][12] = read_data_mem[103:96];
+                                cache_mem[Index][11] = read_data_mem[95:88];
+                                cache_mem[Index][10] = read_data_mem[87:80];
+                                cache_mem[Index][9] = read_data_mem[79:72];
+                                cache_mem[Index][8] = read_data_mem[71:64];
+                                cache_mem[Index][7] = read_data_mem[63:56];
+                                cache_mem[Index][6] = read_data_mem[55:48];
+                                cache_mem[Index][5] = read_data_mem[47:40];
+                                cache_mem[Index][4] = read_data_mem[39:32];
+                                cache_mem[Index][3] = read_data_mem[31:24];
+                                cache_mem[Index][2] = read_data_mem[23:16];
+                                cache_mem[Index][1] = read_data_mem[15:8];
+                                cache_mem[Index][0] = read_data_mem[7:0];
                                 /* Read from cache */
                                 if (byte_offset == 2'b0) begin // Word operation
                                     read_data_cache = {cache_mem[Index][word_offset * 4 + 3],
@@ -203,9 +229,22 @@ module Cache(
             if (read_write_cache == 0) begin // Reading operation
                 if (Done) begin // Main mem operation completed
                     /* Write from main mem to cache */
-                    for (i = 16; i > 0; i = i-1) begin
-                        cache_mem[Index][i-1] = read_data_mem[i*8 - 1: i*8 - 8];
-                    end
+                    cache_mem[Index][15] = read_data_mem[127:120];
+                    cache_mem[Index][14] = read_data_mem[119:112];
+                    cache_mem[Index][13] = read_data_mem[111:104];
+                    cache_mem[Index][12] = read_data_mem[103:96];
+                    cache_mem[Index][11] = read_data_mem[95:88];
+                    cache_mem[Index][10] = read_data_mem[87:80];
+                    cache_mem[Index][9] = read_data_mem[79:72];
+                    cache_mem[Index][8] = read_data_mem[71:64];
+                    cache_mem[Index][7] = read_data_mem[63:56];
+                    cache_mem[Index][6] = read_data_mem[55:48];
+                    cache_mem[Index][5] = read_data_mem[47:40];
+                    cache_mem[Index][4] = read_data_mem[39:32];
+                    cache_mem[Index][3] = read_data_mem[31:24];
+                    cache_mem[Index][2] = read_data_mem[23:16];
+                    cache_mem[Index][1] = read_data_mem[15:8];
+                    cache_mem[Index][0] = read_data_mem[7:0];
                     /* Read from cache */
                     if (byte_offset == 2'b0) begin // Word operation
                         read_data_cache = {cache_mem[Index][word_offset * 4 + 3],
