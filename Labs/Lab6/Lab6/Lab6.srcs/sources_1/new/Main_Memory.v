@@ -30,10 +30,16 @@ module Main_Memory(
 
     reg [7:0] main_mem[63:0][15:0]; // 64 blocks in total; 16 bytes in a block
     wire [5:0] Index;
+    integer i, j;
 
     initial begin
         read_data_mem = 128'b0;
         Done = 0;
+        for (i = 0; i < 64; i = i+1) begin
+            for (j = 0; j < 16; j = j+1) begin
+                main_mem[i][j] = i*16 + j;
+            end
+        end
     end
 
     always @(*) begin

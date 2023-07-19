@@ -29,3 +29,43 @@ current_wave_config {Untitled 2}
 add_wave {{/CacheTest/test/CPU_db}} 
 current_wave_config {Untitled 2}
 add_wave {{/CacheTest/test/CPU_db/address}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 3}
+add_wave {{/CacheTest/test/Cache/hit_miss}} 
+current_wave_config {Untitled 3}
+add_wave {{/CacheTest/test/Cache/address_mem}} 
+current_wave_config {Untitled 3}
+add_wave {{/CacheTest/test/CPU_db/address_test}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 4}
+add_wave {{/CacheTest/test/Done}} 
+current_wave_config {Untitled 4}
+add_wave {{/CacheTest/test/Cache/valid_bits}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 5}
+add_wave {{/CacheTest/test/Cache/valid_bits}} 
+current_wave_config {Untitled 5}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+source CacheTest.tcl
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 7}
+add_wave {{/CacheTest/test/Cache/Done}} 
+current_wave_config {Untitled 7}
+add_wave {{/CacheTest/test/Cache/hit_miss}} 
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
