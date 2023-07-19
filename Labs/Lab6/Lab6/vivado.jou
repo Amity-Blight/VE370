@@ -263,3 +263,9 @@ current_wave_config {Untitled 19}
 add_wave {{/CacheTest/test/Cache/Done}} 
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 20}
+add_wave {{/CacheTest/test/Cache/cache_mem}} 
+close_sim
