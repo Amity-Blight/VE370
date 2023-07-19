@@ -35,16 +35,19 @@ module Main_Memory(
     initial begin
         read_data_mem = 128'b0;
         Done = 0;
+        for (i = 0; i < 64; i = i+1) begin
+            for (j = 0; j < 16; j = j+1) begin
+                if (i<16) main_mem[i][j] = i*16 + j;
+                else if (i>=16 && i<32) main_mem[i][j] = i*16 + j - 256;
+                else if (i>=32 && i<48) main_mem[i][j] = i*16 + j - 512;
+                else main_mem[i][j] = i*16 + j -768;
+            end
+        end
     end
 
     always @(*) begin
-        Done = 0;
         if (read_write_mem == 0) begin // Reading operation
-            for (i = 0; i < 16; i = i+1) begin
-                for (j = 0; j < 4; ) begin
-                    
-                end
-            end
+            i = 10086;
             read_data_mem = {main_mem[Index][15], main_mem[Index][14], main_mem[Index][13], main_mem[Index][12],
                             main_mem[Index][11], main_mem[Index][10], main_mem[Index][9], main_mem[Index][8],
                             main_mem[Index][7], main_mem[Index][6], main_mem[Index][5], main_mem[Index][4],
@@ -69,6 +72,7 @@ module Main_Memory(
             main_mem[Index][0] = write_data_mem[7:0];
         end
         Done = 1;
+        #2 Done = 0;
     end
 
     assign Index = address_mem[9:4];
