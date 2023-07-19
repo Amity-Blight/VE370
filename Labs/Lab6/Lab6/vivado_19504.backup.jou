@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Jul 19 15:52:34 2023
-# Process ID: 12668
+# Start of session at: Wed Jul 19 15:44:32 2023
+# Process ID: 19504
 # Current directory: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16020 C:\Users\weehe\OneDrive - sjtu.edu.cn\2022-2023SU\VE370 Intro to Computer Organization\Labs\Lab6\Lab6\Lab6.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13692 C:\Users\weehe\OneDrive - sjtu.edu.cn\2022-2023SU\VE370 Intro to Computer Organization\Labs\Lab6\Lab6\Lab6.xpr
 # Log file: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/vivado.log
 # Journal file: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6\vivado.jou
 # Running On: SurfacePro9, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 8406 MB
@@ -16,16 +16,3 @@ open_project {C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to C
 update_compile_order -fileset sources_1
 launch_simulation
 source CacheTest.tcl
-current_wave_config {Untitled 1}
-add_wave {{/CacheTest/test/Cache/hit_miss}} 
-close_sim
-launch_simulation
-source CacheTest.tcl
-current_wave_config {Untitled 2}
-add_wave {{/CacheTest/test/Cache/hit_miss}} 
-current_wave_config {Untitled 2}
-add_wave {{/CacheTest/test/Cache/address_cache}} 
-current_wave_config {Untitled 2}
-add_wave {{/CacheTest/test/CPU_db}} 
-current_wave_config {Untitled 2}
-add_wave {{/CacheTest/test/CPU_db/address}} 

@@ -49,6 +49,7 @@ module Cache(
     integer i, j;
 
     initial begin
+        hit_miss = 1;
         for (i = 0; i < 4 ; i = i+1) begin
             for (j = 0; j < 16 ; j = j+1) begin
                 cache_mem[i][j] = 8'b0;

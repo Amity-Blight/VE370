@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Jul 19 15:52:34 2023
-# Process ID: 12668
+# Start of session at: Wed Jul 19 15:44:32 2023
+# Process ID: 19504
 # Current directory: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16020 C:\Users\weehe\OneDrive - sjtu.edu.cn\2022-2023SU\VE370 Intro to Computer Organization\Labs\Lab6\Lab6\Lab6.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13692 C:\Users\weehe\OneDrive - sjtu.edu.cn\2022-2023SU\VE370 Intro to Computer Organization\Labs\Lab6\Lab6\Lab6.xpr
 # Log file: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/vivado.log
 # Journal file: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6\vivado.jou
 # Running On: SurfacePro9, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 8406 MB
@@ -80,7 +80,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_Vivado/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1424.785 ; gain = 331.520
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1424.250 ; gain = 341.594
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
@@ -107,7 +107,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.
 INFO: [VRFC 10-311] analyzing module top
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sim_1/new/Lab6_test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CacheTest
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CacheTest_behav xil_defaultlib.CacheTest xil_defaultlib.glbl -log elaborate.log"
@@ -131,8 +131,8 @@ Compiling module xil_defaultlib.top
 Compiling module xil_defaultlib.CacheTest
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot CacheTest_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1481.992 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1502.270 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -171,277 +171,4 @@ Clock cycle           3
 Read data = 00000000
 hit_miss = 1
 ===============================================
-===============================================
-Clock cycle           4
-Read data = 000003ac
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           5
-Read data = xxxxxxxx
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           6
-Read data = xxxxxxxx
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           7
-Read data = 000003ac
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           8
-Read data = 000003ac
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           9
-Read data = 000003ac
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          10
-Read data = 000003ae
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          11
-Read data = 000003ad
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          12
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          13
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          14
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          15
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          16
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          17
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          18
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          19
-Read data = 00000003
-hit_miss = 1
-===============================================
-$stop called at time : 200 ns : File "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sim_1/new/Lab6_test.v" Line 48
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CacheTest_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1507.219 ; gain = 25.227
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/CacheTest/test/Cache/hit_miss}} 
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'CacheTest'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx_Vivado/Vivado/2023.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'CacheTest' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj CacheTest_vlog.prj"
-ECHO 处于关闭状态。
-ECHO 处于关闭状态。
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sources_1/new/Cache.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Cache
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sources_1/new/Lab6_cpu.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sources_1/new/Main_Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Main_Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sources_1/new/top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sim_1/new/Lab6_test.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CacheTest
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CacheTest_behav xil_defaultlib.CacheTest xil_defaultlib.glbl -log elaborate.log"
-ECHO 处于关闭状态。
-ECHO 处于关闭状态。
-Vivado Simulator v2023.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx_Vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CacheTest_behav xil_defaultlib.CacheTest xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Cache
-Compiling module xil_defaultlib.Main_Memory
-Compiling module xil_defaultlib.CPU
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.CacheTest
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CacheTest_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2576.188 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "CacheTest_behav -key {Behavioral:sim_1:Functional:CacheTest} -tclbatch {CacheTest.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source CacheTest.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# log_wave -r /
-# run 1000ns
-===============================================
-Clock cycle           0
-Read data = xxxxxxxx
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           1
-Read data = xxxxxxxx
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           2
-Read data = 00000000
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           3
-Read data = 00000000
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           4
-Read data = 000003ac
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           5
-Read data = xxxxxxxx
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           6
-Read data = xxxxxxxx
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           7
-Read data = 000003ac
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           8
-Read data = 000003ac
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle           9
-Read data = 000003ac
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          10
-Read data = 000003ae
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          11
-Read data = 000003ad
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          12
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          13
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          14
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          15
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          16
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          17
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          18
-Read data = 00000003
-hit_miss = 1
-===============================================
-===============================================
-Clock cycle          19
-Read data = 00000003
-hit_miss = 1
-===============================================
-$stop called at time : 200 ns : File "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sim_1/new/Lab6_test.v" Line 48
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'CacheTest_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 2576.188 ; gain = 0.000
-current_wave_config {Untitled 2}
-Untitled 2
-add_wave {{/CacheTest/test/Cache/hit_miss}} 
-current_wave_config {Untitled 2}
-Untitled 2
-add_wave {{/CacheTest/test/Cache/address_cache}} 
-current_wave_config {Untitled 2}
-Untitled 2
-add_wave {{/CacheTest/test/CPU_db}} 
-current_wave_config {Untitled 2}
-Untitled 2
-add_wave {{/CacheTest/test/CPU_db/address}} 
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

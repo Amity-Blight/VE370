@@ -8,5 +8,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.
 INFO: [VRFC 10-311] analyzing module top
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.srcs/sim_1/new/Lab6_test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CacheTest
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab6/Lab6/Lab6.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

@@ -30,7 +30,6 @@ module Main_Memory(
 
     reg [7:0] main_mem[63:0][15:0]; // 64 blocks in total; 16 bytes in a block
     wire [5:0] Index;
-    integer i, j;
 
     initial begin
         read_data_mem = 128'b0;
@@ -38,13 +37,7 @@ module Main_Memory(
     end
 
     always @(*) begin
-        Done = 0;
         if (read_write_mem == 0) begin // Reading operation
-            for (i = 0; i < 16; i = i+1) begin
-                for (j = 0; j < 4; ) begin
-                    
-                end
-            end
             read_data_mem = {main_mem[Index][15], main_mem[Index][14], main_mem[Index][13], main_mem[Index][12],
                             main_mem[Index][11], main_mem[Index][10], main_mem[Index][9], main_mem[Index][8],
                             main_mem[Index][7], main_mem[Index][6], main_mem[Index][5], main_mem[Index][4],
@@ -69,6 +62,7 @@ module Main_Memory(
             main_mem[Index][0] = write_data_mem[7:0];
         end
         Done = 1;
+        #2 Done = 0;
     end
 
     assign Index = address_mem[9:4];
