@@ -69,3 +69,28 @@ update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/Cache/cache_mem}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/Cache/dirty_bits}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/mem_db/main_mem[16]}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/mem_db/main_mem[18]}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/mem_db/main_mem[22]}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/mem_db/main_mem[26]}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/mem_db/main_mem}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/mem_db/address_mem}} 
+current_wave_config {Untitled 8}
+add_wave {{/CacheTest/test/mem_db/main_mem}} 

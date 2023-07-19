@@ -37,7 +37,10 @@ module Main_Memory(
         Done = 0;
         for (i = 0; i < 64; i = i+1) begin
             for (j = 0; j < 16; j = j+1) begin
-                main_mem[i][j] = i*16 + j;
+                if (i<16) main_mem[i][j] = i*16 + j;
+                else if (i>=16 && i<32) main_mem[i][j] = i*16 + j - 256;
+                else if (i>=32 && i<48) main_mem[i][j] = i*16 + j - 512;
+                else main_mem[i][j] = i*16 + j -768;
             end
         end
     end
