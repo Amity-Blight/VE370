@@ -96,6 +96,7 @@ module Cache(
                 if (dirty_bits[Index] == 0) begin // Block not dirty
                     read_write_mem = 0;
                     address_mem = {Tag, Index, 4'b0};
+                    #1
                     if (Done) begin // Main mem operation completed
                         /* Read from main mem to cache */
                         cache_mem[Index][15] = read_data_mem[127:120];
@@ -153,6 +154,7 @@ module Cache(
                                     cache_mem[Index][11], cache_mem[Index][10], cache_mem[Index][9], cache_mem[Index][8],
                                     cache_mem[Index][7], cache_mem[Index][6], cache_mem[Index][5], cache_mem[Index][4],
                                     cache_mem[Index][3], cache_mem[Index][2], cache_mem[Index][1], cache_mem[Index][0]};
+                    #1
                     if (Done) begin // Write back completed
                         #2
                         dirty_bits[Index] = 0;
@@ -213,6 +215,7 @@ module Cache(
         else begin // Block invalid
             read_write_mem = 0;
             address_mem = {Tag, Index, 4'b0};
+            #1
             if (Done) begin // Main mem operation completed
                 /* Read from main mem to cache */
                 cache_mem[Index][15] = read_data_mem[127:120];
