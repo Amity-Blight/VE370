@@ -94,3 +94,172 @@ current_wave_config {Untitled 8}
 add_wave {{/CacheTest/test/mem_db/address_mem}} 
 current_wave_config {Untitled 8}
 add_wave {{/CacheTest/test/mem_db/main_mem}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 9}
+add_wave {{/CacheTest/test/mem_db/main_mem[26]}} 
+current_wave_config {Untitled 9}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 9}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 9}
+add_wave {{/CacheTest/test/mem_db/read_write_mem}} 
+current_wave_config {Untitled 9}
+add_wave {{/CacheTest/test/mem_db/Done}} 
+current_wave_config {Untitled 9}
+add_wave {{/CacheTest/test/mem_db/Index}} 
+current_wave_config {Untitled 9}
+add_wave {{/CacheTest/test/mem_db/address_mem}} 
+current_wave_config {Untitled 9}
+add_wave {{/CacheTest/test/Cache/address_cache}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 10}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 10}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 10}
+add_wave {{/CacheTest/test/mem_db/main_mem[26]}} 
+current_wave_config {Untitled 10}
+add_wave {{/CacheTest/test/mem_db/Index}} 
+current_wave_config {Untitled 10}
+add_wave {{/CacheTest/test/mem_db/read_write_mem}} 
+current_wave_config {Untitled 10}
+add_wave {{/CacheTest/test/mem_db/Done}} 
+current_wave_config {Untitled 10}
+add_wave {{/CacheTest/test/Cache/dirty_bits}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 11}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 11}
+add_wave {{/CacheTest/test/mem_db/Done}} 
+current_wave_config {Untitled 11}
+add_wave {{/CacheTest/test/mem_db/read_write_mem}} 
+current_wave_config {Untitled 11}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 11}
+add_wave {{/CacheTest/test/mem_db/Index}} 
+current_wave_config {Untitled 11}
+add_wave {{/CacheTest/test/mem_db/main_mem[26]}} 
+current_wave_config {Untitled 11}
+add_wave {{/CacheTest/test/mem_db/write_data_mem}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/Cache/address_cache}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/mem_db/main_mem[26]}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/mem_db/Done}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/mem_db/address_mem}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/mem_db/Index}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/mem_db/read_write_mem}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/mem_db/main_mem[22]}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/Cache/read_data_mem}} 
+current_wave_config {Untitled 12}
+add_wave {{/CacheTest/test/Cache/cache_mem[2]}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 13}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 13}
+add_wave {{/CacheTest/test/Cache/hit_miss}} 
+current_wave_config {Untitled 13}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 13}
+add_wave {{/CacheTest/test/mem_db/read_write_mem}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 14}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 14}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 14}
+add_wave {{/CacheTest/test/mem_db/address_mem}} 
+current_wave_config {Untitled 14}
+add_wave {{/CacheTest/test/mem_db/main_mem[26]}} 
+current_wave_config {Untitled 14}
+add_wave {{/CacheTest/test/mem_db/read_write_mem}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/mem_db/read_write_mem}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/mem_db/address_mem}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/mem_db/Done}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/mem_db/write_data_mem}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/mem_db/main_mem[26]}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/Cache/tags}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/Cache/cache_mem}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/Cache/Tag}} 
+current_wave_config {Untitled 15}
+add_wave {{/CacheTest/test/Cache/read_data_mem}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 16}
+add_wave {{/CacheTest/test/Cache/cache_mem}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 17}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 17}
+add_wave {{/CacheTest/test/Cache/cache_mem}} 
+current_wave_config {Untitled 17}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 17}
+add_wave {{/CacheTest/test/mem_db/read_write_mem}} 
+current_wave_config {Untitled 17}
+add_wave {{/CacheTest/test/mem_db/main_mem[18]}} 
+current_wave_config {Untitled 17}
+add_wave {{/CacheTest/test/mem_db/Index}} 
+current_wave_config {Untitled 17}
+add_wave {{/CacheTest/test/mem_db/main_mem[26]}} 
+close_sim
+launch_simulation
+source CacheTest.tcl
+close_sim
+launch_simulation
+source CacheTest.tcl
+current_wave_config {Untitled 19}
+add_wave {{/CacheTest/test/mem_db/read_data_mem}} 
+current_wave_config {Untitled 19}
+add_wave {{/CacheTest/test/CPU_db/Read_Data}} 
+current_wave_config {Untitled 19}
+add_wave {{/CacheTest/test/Cache/read_data_mem}} 
+current_wave_config {Untitled 19}
+add_wave {{/CacheTest/test/Cache/cache_mem}} 
+current_wave_config {Untitled 19}
+add_wave {{/CacheTest/test/Cache/read_write_cache}} 
+current_wave_config {Untitled 19}
+add_wave {{/CacheTest/test/Cache/address_cache}} 
+current_wave_config {Untitled 19}
+add_wave {{/CacheTest/test/Cache/Done}} 
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

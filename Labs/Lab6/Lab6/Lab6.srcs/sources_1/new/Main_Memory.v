@@ -47,6 +47,7 @@ module Main_Memory(
 
     always @(*) begin
         if (read_write_mem == 0) begin // Reading operation
+            i = 10086;
             read_data_mem = {main_mem[Index][15], main_mem[Index][14], main_mem[Index][13], main_mem[Index][12],
                             main_mem[Index][11], main_mem[Index][10], main_mem[Index][9], main_mem[Index][8],
                             main_mem[Index][7], main_mem[Index][6], main_mem[Index][5], main_mem[Index][4],
