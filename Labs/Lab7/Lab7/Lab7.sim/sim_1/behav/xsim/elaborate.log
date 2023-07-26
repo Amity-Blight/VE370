@@ -1,0 +1,30 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx_Vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vm_test_behav xil_defaultlib.vm_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 10 for port 'address_cache' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:29]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'read_data_mem' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:33]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'write_data_mem' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:38]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 6 for port 'VPN_in' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:41]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'PPN_in' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:42]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 6 for port 'VPN_out' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:44]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'PPN_out' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:45]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'write_data_mem' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:51]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'read_data_mem' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:52]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 6 for port 'VPN_in' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:56]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'PPN_out' [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.Cache
+Compiling module xil_defaultlib.TLB
+Compiling module xil_defaultlib.Main_Memory
+Compiling module xil_defaultlib.Page_Table
+Compiling module xil_defaultlib.vm_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vm_test_behav

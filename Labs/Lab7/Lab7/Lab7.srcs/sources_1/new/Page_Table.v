@@ -27,6 +27,7 @@ module Page_Table(
 );
 
     reg [31:0] pt[10:0];
+    reg page_fault;
 
     initial begin
         pt[0] = {1'b1, 29'b0, 2'b01};
@@ -42,6 +43,7 @@ module Page_Table(
         pt[10] = {1'b1, 29'b0, 2'b01}; 
         PPN_out = 2'b0;
         Page_Table_hit = 0;
+        page_fault = 0;
     end
 
     always @(VPN_in) begin
@@ -49,8 +51,13 @@ module Page_Table(
             PPN_out = pt[VPN_in][1:0];
             Page_Table_hit = 1;
         end
-        else Page_Table_hit = 0;
-        #2 Page_Table_hit = 0;
+        else begin
+            Page_Table_hit = 0;
+            page_fault = 1;
+        end
+        #2
+        Page_Table_hit = 0;
+        page_fault = 0;
     end
 
 endmodule

@@ -42,12 +42,13 @@ module Cache(
 
     reg [7:0] cache_mem[3:0][15:0]; // 4 blocks in total; 4 words in a block, namely 16 bytes in a block;
     wire [4:0] Tag;
-    wire [1:0] Index, word_offset, byte_offset;
+    wire [1:0] word_offset, byte_offset;
     wire set_index;
     reg valid_bits[3:0];
     reg dirty_bits[3:0];
     reg ref_bits[3:0];
     reg [4:0] tags[3:0];
+    reg [1:0] Index;
     reg d;
     integer i, j;
 
@@ -250,6 +251,9 @@ module Cache(
                     hit_miss = 1;
                 end
             end
+            ref_bits[set_index * 2] = 0;
+            ref_bits[set_index * 2 + 1] = 0;
+            ref_bits[Index] = 1;
         end
     end
 

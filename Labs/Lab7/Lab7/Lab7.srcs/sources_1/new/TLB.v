@@ -52,12 +52,9 @@ module TLB(
     always @(VPN_in) begin
         TLB_hit = 0;
         /* Search in TLB */
+        j = 4;
         for (i = 0; i < 4; i = i + 1) begin
-            if (valid_bits[i] == 1 && tags[i] == VPN_in) begin
-                j = i;
-                break;
-            end
-            j = 4;
+            if (valid_bits[i] == 1 && tags[i] == VPN_in) j = i;
         end
         if (j != 4) begin // TLB hit
             PPN_out = ppn[i];
@@ -71,14 +68,22 @@ module TLB(
             if (Page_Table_hit) begin // Page Table hit
                 Page_Fault = 0;
                 /* Search for LRU entry */
-                for (i = 0; i < 4; i = i + 1) begin
-                    if (valid_bits[i] == 0 || ref_bits[i] == 2'b00) begin // find empty entry
-                        j = i;
-                        break;
-                    end
-                    if (ref_bits[i] < ref) begin // find LRU entry
-                        ref = ref_bits;
-                        j = i;
+                if (valid_bits[0] == 0) j = 0;
+                else if (valid_bits[1] == 0) j = 1;
+                else if (valid_bits[2] == 0) j = 2;
+                else if (valid_bits[3] == 0) j = 3;
+                else begin
+                    if (ref_bits[0] == 2'b0) j = 0;
+                    else if (ref_bits[1] == 2'b0) j = 1;
+                    else if (ref_bits[2] == 2'b0) j = 2;
+                    else if (ref_bits[3] == 2'b0) j = 3;
+                    else begin
+                        for (i = 0; i < 4; i = i + 1) begin
+                            if (ref_bits[i] < ref) begin // find LRU entry
+                                ref = ref_bits[i];
+                                j = i;
+                            end
+                        end
                     end
                 end
                 /* Update the j entry */

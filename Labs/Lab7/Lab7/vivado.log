@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Jul 25 20:57:38 2023
-# Process ID: 11180
+# Start of session at: Wed Jul 26 15:27:51 2023
+# Process ID: 17000
 # Current directory: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1924 C:\Users\weehe\OneDrive - sjtu.edu.cn\2022-2023SU\VE370 Intro to Computer Organization\Labs\Lab7\Lab7\Lab7.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9704 C:\Users\weehe\OneDrive - sjtu.edu.cn\2022-2023SU\VE370 Intro to Computer Organization\Labs\Lab7\Lab7\Lab7.xpr
 # Log file: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/vivado.log
 # Journal file: C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7\vivado.jou
 # Running On: SurfacePro9, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 8406 MB
@@ -80,7 +80,222 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx_Vivado/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1422.445 ; gain = 377.645
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1430.637 ; gain = 370.086
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/CPU.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/CPU.v}}
+file mkdir C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new
+file mkdir C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new
+file mkdir C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new
+file mkdir C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new
+file mkdir C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new
+file mkdir {C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new}
+close [ open {C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v} w ]
+add_files -fileset sim_1 {{C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property -name {xsim.simulate.runtime} -value {2000ns} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.log_all_signals} -value {true} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vm_test'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx_Vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'vm_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vm_test_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cache
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Index is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v:69]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Index is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v:99]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Index is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v:131]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Index is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v:132]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Index is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v:133]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Index is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v:134]
+ERROR: [VRFC 10-8530] module 'Cache' is ignored due to previous errors [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vm_test'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx_Vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'vm_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vm_test_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Main_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Page_Table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Page_Table
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TLB
+ERROR: [VRFC 10-3155] cannot access memory 'ref_bits' directly [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v:80]
+ERROR: [VRFC 10-395] cannot assign an unpacked type to a packed type [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v:80]
+ERROR: [VRFC 10-9468] unpacked value/target cannot be used in an assignment [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v:80]
+ERROR: [VRFC 10-8530] module 'TLB' is ignored due to previous errors [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vm_test'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx_Vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'vm_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vm_test_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Main_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Page_Table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Page_Table
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TLB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vm_test
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vm_test_behav xil_defaultlib.vm_test xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx_Vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vm_test_behav xil_defaultlib.vm_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'break' is not declared [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v:58]
+ERROR: [VRFC 10-2989] 'break' is not declared [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v:77]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1555.344 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vm_test'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx_Vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'vm_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vm_test_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Main_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/Page_Table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Page_Table
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TLB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sim_1/new/Lab7_vm_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vm_test
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vm_test_behav xil_defaultlib.vm_test xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx_Vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vm_test_behav xil_defaultlib.vm_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'break' is not declared [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v:58]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vm_test'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx_Vivado/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'vm_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vm_test_vlog.prj"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vm_test_behav xil_defaultlib.vm_test xil_defaultlib.glbl -log elaborate.log"
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx_Vivado/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot vm_test_behav xil_defaultlib.vm_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'break' is not declared [C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.srcs/sources_1/new/TLB.v:58]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/weehe/OneDrive - sjtu.edu.cn/2022-2023SU/VE370 Intro to Computer Organization/Labs/Lab7/Lab7/Lab7.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
