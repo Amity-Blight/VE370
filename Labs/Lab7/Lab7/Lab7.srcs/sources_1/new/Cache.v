@@ -68,7 +68,7 @@ module Cache(
     always @(*) begin
         if (valid_bits[set_index * 2] == 1 && tags[set_index * 2] == Tag) begin    // Set block 0 hit
             Index = set_index * 2;
-            address_mem = {Tag, Index, 4'b0};
+            address_mem = {Tag, set_index, 4'b0};
             if (read_write_cache == 0) begin    // Reading operation
                 if (byte_offset == 2'b0) begin // Word operation
                     read_data_cache = {cache_mem[Index][word_offset * 4 + 3],
@@ -98,7 +98,7 @@ module Cache(
         end
         else if (valid_bits[set_index * 2 + 1] == 1 && tags[set_index * 2 + 1] == Tag) begin    // Set block 1 hit
             Index = set_index * 2 + 1;
-            address_mem = {Tag, Index, 4'b0};
+            address_mem = {Tag, set_index, 4'b0};
             if (read_write_cache == 0) begin    // Reading operation
                 if (byte_offset == 2'b0) begin // Word operation
                     read_data_cache = {cache_mem[Index][word_offset * 4 + 3],
@@ -137,7 +137,7 @@ module Cache(
             if (valid_bits[Index] == 1 && dirty_bits[Index] == 1) begin // Target block dirty
                 /* Write back */
                 read_write_mem = 1;
-                address_mem = {tags[Index], Index, 4'b0};
+                address_mem = {tags[Index], set_index, 4'b0};
                 write_data_mem = {cache_mem[Index][15], cache_mem[Index][14], cache_mem[Index][13], cache_mem[Index][12],
                                 cache_mem[Index][11], cache_mem[Index][10], cache_mem[Index][9], cache_mem[Index][8],
                                 cache_mem[Index][7], cache_mem[Index][6], cache_mem[Index][5], cache_mem[Index][4],
@@ -147,7 +147,7 @@ module Cache(
                     #2
                     dirty_bits[Index] = 0;
                     read_write_mem = 0;
-                    address_mem = {Tag, Index, 4'b0};
+                    address_mem = {Tag, set_index, 4'b0};
                     if (Done) begin // Main mem operation completed
                         /* Read from main mem to cache */
                         cache_mem[Index][15] = read_data_mem[127:120];
@@ -200,7 +200,7 @@ module Cache(
             end
             else begin // Target block not dirty
                 read_write_mem = 0;
-                address_mem = {Tag, Index, 4'b0};
+                address_mem = {Tag, set_index, 4'b0};
                 #1
                 if (Done) begin // Main mem operation completed
                     /* Read from main mem to cache */
@@ -255,9 +255,10 @@ module Cache(
             ref_bits[set_index * 2 + 1] = 0;
             ref_bits[Index] = 1;
         end
+        hit_miss = 1;
     end
 
-    always @(negedge TLB_hit) hit_miss = 0;
+    // always @(negedge TLB_hit) hit_miss = 0;
 
     assign Tag          = address_cache[9:5];
     assign set_index    = address_cache[4];

@@ -21,11 +21,11 @@
 
 
 module TLB(
-    input       [5:0]   VPN_in,
+    input       [13:0]  virtual_address,
     input       [1:0]   PPN_in,
     input               Page_Table_hit,
     output reg  [5:0]   VPN_out,
-    output reg  [1:0]   PPN_out,
+    output reg  [9:0]   physical_address,
     output reg          TLB_hit,
     output reg          Page_Fault
 );
@@ -34,8 +34,12 @@ module TLB(
     reg [1:0] ref_bits[3:0];
     reg [5:0] tags[3:0];
     reg [1:0] ppn[3:0];
+    reg [1:0] PPN_out;
     reg [1:0] ref;
+    wire [5:0] VPN_in;
     integer i,j;
+
+    assign VPN_in = virtual_address[13:8];
 
     initial begin
         for (i = 0; i < 4; i = i + 1) begin
@@ -50,7 +54,6 @@ module TLB(
     end
 
     always @(VPN_in) begin
-        TLB_hit = 0;
         /* Search in TLB */
         j = 4;
         for (i = 0; i < 4; i = i + 1) begin
@@ -58,6 +61,7 @@ module TLB(
         end
         if (j != 4) begin // TLB hit
             PPN_out = ppn[i];
+            physical_address = {PPN_out, virtual_address[7:0]};
             Page_Fault = 0;
             TLB_hit = 1;
         end
@@ -100,6 +104,7 @@ module TLB(
                 end
                 /* Output */
                 PPN_out = ppn[j];
+                physical_address = {PPN_out, virtual_address[7:0]};
                 TLB_hit = 1;
             end
             else begin // Page Fault
