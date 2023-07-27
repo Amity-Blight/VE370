@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab7.srcs/sources_1/new/Cache.v" \
+"../../../../Lab7.srcs/sources_1/new/Main_Memory.v" \
+"../../../../Lab7.srcs/sources_1/new/Page_Table.v" \
+"../../../../Lab7.srcs/sources_1/new/TLB.v" \
+"../../../../Lab7.srcs/sim_1/new/Lab7_vm_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
