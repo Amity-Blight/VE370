@@ -45,3 +45,93 @@ launch_simulation
 launch_simulation
 launch_simulation
 launch_simulation
+launch_simulation
+source vm_test.tcl
+close_sim
+launch_simulation
+launch_simulation
+source vm_test.tcl
+current_wave_config {Untitled 2}
+add_wave {{/vm_test/cache/read_data_cache}} 
+current_wave_config {Untitled 2}
+add_wave {{/vm_test/cache/cache_mem[0]}} 
+current_wave_config {Untitled 2}
+add_wave {{/vm_test/memory/main_mem[40]}} 
+current_wave_config {Untitled 2}
+add_wave {{/vm_test/cache/Tag}} 
+close_sim
+launch_simulation
+source vm_test.tcl
+close_sim
+launch_simulation
+source vm_test.tcl
+current_wave_config {Untitled 4}
+add_wave {{/vm_test/CPU/hit_miss}} 
+close_sim
+launch_simulation
+source vm_test.tcl
+close_sim
+launch_simulation
+source vm_test.tcl
+current_wave_config {Untitled 6}
+add_wave {{/vm_test/memory/main_mem[25]}} 
+current_wave_config {Untitled 6}
+add_wave {{/vm_test/cache/address_cache}} 
+close_sim
+launch_simulation
+source vm_test.tcl
+close_sim
+launch_simulation
+source vm_test.tcl
+close_sim
+launch_simulation
+source vm_test.tcl
+current_wave_config {Untitled 9}
+add_wave {{/vm_test/cache/Tag}} 
+current_wave_config {Untitled 9}
+add_wave {{/vm_test/TLB/tags}} 
+current_wave_config {Untitled 9}
+add_wave {{/vm_test/TLB/VPN_in}} 
+close_sim
+launch_simulation
+source vm_test.tcl
+close_sim
+launch_simulation
+source vm_test.tcl
+close_sim
+launch_simulation
+source vm_test.tcl
+current_wave_config {Untitled 12}
+add_wave {{/vm_test/cache/Index}} 
+close_sim
+launch_simulation
+source vm_test.tcl
+current_wave_config {}
+add_wave {{/vm_test/cache/cache_mem}} 
+current_wave_config {Untitled 13}
+add_wave {{/vm_test/TLB/virtual_address}} 
+current_wave_config {Untitled 13}
+add_wave {{/vm_test/TLB/VPN_in}} 
+current_wave_config {Untitled 13}
+add_wave {{/vm_test/TLB/PPN_out}} 
+current_wave_config {Untitled 13}
+add_wave {{/vm_test/TLB/TLB_hit}} 
+current_wave_config {Untitled 13}
+add_wave {{/vm_test/TLB/ppn[1]}} 
+current_wave_config {Untitled 13}
+add_wave {{/vm_test/TLB/i}} 
+current_wave_config {Untitled 13}
+add_wave {{/vm_test/TLB/j}} 
+close_sim
+launch_simulation
+launch_simulation
+source vm_test.tcl
+current_wave_config {Untitled 14}
+add_wave {{/vm_test/cache/cache_mem}} 
+close_sim
+launch_simulation
+source vm_test.tcl
+close_sim
+launch_simulation
+source vm_test.tcl
+close_sim

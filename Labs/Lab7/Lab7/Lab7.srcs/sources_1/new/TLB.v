@@ -54,13 +54,14 @@ module TLB(
     end
 
     always @(VPN_in) begin
+        TLB_hit = 0;
         /* Search in TLB */
         j = 4;
         for (i = 0; i < 4; i = i + 1) begin
             if (valid_bits[i] == 1 && tags[i] == VPN_in) j = i;
         end
         if (j != 4) begin // TLB hit
-            PPN_out = ppn[i];
+            PPN_out = ppn[j];
             physical_address = {PPN_out, virtual_address[7:0]};
             Page_Fault = 0;
             TLB_hit = 1;

@@ -65,7 +65,7 @@ module Cache(
         end
     end
 
-    always @(*) begin
+    always @(posedge TLB_hit) begin
         if (valid_bits[set_index * 2] == 1 && tags[set_index * 2] == Tag) begin    // Set block 0 hit
             Index = set_index * 2;
             address_mem = {Tag, set_index, 4'b0};
@@ -221,6 +221,7 @@ module Cache(
                     cache_mem[Index][1] = read_data_mem[15:8];
                     cache_mem[Index][0] = read_data_mem[7:0];
                     tags[Index] = Tag;
+                    valid_bits[Index] = 1;
                     if (read_write_cache == 0) begin // Reading operation
                         /* Read from cache */
                         if (byte_offset == 2'b0) begin // Word operation
